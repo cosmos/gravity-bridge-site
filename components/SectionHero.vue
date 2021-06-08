@@ -11,34 +11,8 @@
             Gravity Bridge, connecting Ethereum and Cosmos.
           </div>
         </div>
-        <div class="hero-countdown">
-          <tm-countdown
-            v-if="toTimezone(countdown.date, countdown.time) >= moment()"
-            :now="countdown.now"
-            :end="countdownTimer(countdown.date, countdown.time)"
-            :t-minus="true"
-            class="
-              hero-countdown__timer
-              tm-rf1 tm-medium tm-lh-title tm-overline
-            "
-          />
-          <div
-            v-else
-            class="
-              hero-countdown__timer
-              tm-rf1 tm-medium tm-lh-title tm-overline
-            "
-          >
-            00:00:00:00
-          </div>
-          <div
-            class="
-              hero-countdown__title
-              tm-rf0 tm-medium tm-lh-title tm-overline
-            "
-          >
-            Registration ends June 21
-          </div>
+        <div class="hero-countdown mt-10">
+          <section-countdown />
         </div>
       </div>
     </div>
@@ -46,41 +20,9 @@
 </template>
 
 <script>
-import moment from 'moment-timezone'
-
 export default {
   data() {
-    return {
-      moment,
-      countdown: {
-        now: Math.trunc(new Date(new Date().toUTCString()).getTime() / 1000),
-        date: '2021-06-21',
-        time: '06:00',
-        // usage: moment.tz("2021-02-18 06:00", "UTC").format()
-        end: '2021-06-21T06:00:00Z',
-      },
-    }
-  },
-  mounted() {
-    window.setInterval(() => {
-      this.countdown.now = Math.trunc(new Date().getTime() / 1000)
-    }, 1000)
-  },
-  methods: {
-    countdownTimer(date, time) {
-      return moment.tz(`${date} ${time}`, 'UTC').format()
-    },
-    toTimezone(date, time) {
-      return (
-        moment
-          // set base time with UTC
-          // get timezone with i18n API - Intl.DateTimeFormat().resolvedOptions().timeZone
-          // usage: 2020-08-04 08:00
-          .tz(`${date} ${time}`, 'UTC')
-          // use client's locale time zone
-          .tz(moment.tz.guess())
-      )
-    },
+    return {}
   },
 }
 </script>
@@ -91,23 +33,6 @@ export default {
     transform translate3d(0,0,0) rotate(0deg)
   to
     transform translate3d(0,0,0) rotate(360deg)
-
-.hero-countdown
-  margin-top var(--spacing-10)
-  display flex
-  flex-direction column
-  align-items center
-  justify-content center
-  &__title
-    color var(--white)
-  &__timer
-    color var(--secondary-900)
-    background-color var(--white-200)
-    padding 0.25rem 1rem
-    border-radius $border-radius-1
-    width fit-content
-    margin-top var(--spacing-4)
-    margin-bottom var(--spacing-4)
 
 .section-hero
   position relative

@@ -9,7 +9,7 @@
         <ul>
           <li>
             <NuxtLink to="/" class="text tm-rf0 tm-medium tm-lh-title"
-              >Overview</NuxtLink
+              >Stay up to date &#8594;</NuxtLink
             >
           </li>
           <li>
@@ -18,21 +18,11 @@
               target="_blank"
               rel="noreferrer noopener"
               class="text tm-rf0 tm-medium tm-lh-title"
-              >Updates &#8599;</a
+              >Register &#8594;</a
             >
           </li>
         </ul>
       </div>
-      <!-- <div
-        v-if="toTimezone(countdown.date, countdown.time) >= moment()"
-        class="countdown tm-rf-1 tm-code"
-      >
-        Launch in&nbsp;
-        <tm-countdown
-          :now="countdown.now"
-          :end="countdownTimer(countdown.date, countdown.time)"
-        />
-      </div> -->
     </nav>
   </div>
 </template>

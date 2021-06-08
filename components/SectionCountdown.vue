@@ -1,14 +1,16 @@
 <template>
-  <div
-    v-if="toTimezone(endDate, endTime) >= moment()"
-    class="section-countdown"
-  >
-    <div class="overline tm-rf0 tm-lh-title">countdown title</div>
+  <div class="center">
     <tm-countdown
+      v-if="toTimezone(endDate, endTime) >= moment()"
       :now="currentTime"
       :end="countdownTimer(endDate, endTime)"
-      class="time tm-rf5 tm-bold tm-lh-copy tm-code"
+      :t-minus="true"
+      class="time tm-rf7 tm-medium tm-lh-title mt-3"
     />
+    <div v-else class="time tm-rf7 tm-medium tm-lh-title mt-3">00:00:00:00</div>
+    <div class="date tm-rf0 tm-medium tm-lh-title tm-overline mt-3 tm-muted">
+      Registration ends June 21
+    </div>
   </div>
 </template>
 
@@ -56,15 +58,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-.section-countdown
-  position relative
-  z-index 50
-
-.time
-  margin-top var(--spacing-3)
-
-.date
-  margin-top var(--spacing-3)
-  color var(--white-500)
-</style>
+<style lang="stylus" scoped></style>

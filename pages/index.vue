@@ -1,7 +1,6 @@
 <template>
   <main>
     <section-hero />
-    <section-countdown />
 
     <div class="tm-section tm-wrapper tm-container">
       <div class="mt-10">
