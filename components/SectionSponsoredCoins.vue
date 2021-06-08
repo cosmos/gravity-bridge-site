@@ -1,13 +1,15 @@
 <template>
-  <div class="logos-list z-text">
-    <tm-link v-for="item in list" :key="item.text" :href="item.url">
-      <tm-tooltip :text="`${item.text} ↗`" position="top-center">
-        <img
-          :src="require(`~/assets/images/logos/${item.img}.svg`)"
-          :alt="item.text"
-        />
-      </tm-tooltip>
-    </tm-link>
+  <div class="tm-section tm-wrapper tm-container">
+    <div class="logos-list">
+      <tm-link v-for="item in list" :key="item.text" :href="item.url">
+        <tm-tooltip :text="`${item.text} ↗`" position="top-center">
+          <img
+            :src="require(`~/assets/images/logos/${item.img}.svg`)"
+            :alt="item.text"
+          />
+        </tm-tooltip>
+      </tm-link>
+    </div>
   </div>
 </template>
 

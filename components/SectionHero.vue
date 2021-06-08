@@ -1,6 +1,6 @@
 <template>
   <div class="section-hero">
-    <div class="tm-section-container section-container">
+    <div class="tm-container section-container">
       <div class="container">
         <div class="content">
           <div class="title tm-rf4 tm-bold tm-lh-title">
@@ -11,7 +11,7 @@
             Gravity Bridge, connecting Ethereum and Cosmos.
           </div>
         </div>
-        <div class="hero-countdown mt-10">
+        <div class="mt-10">
           <section-countdown />
         </div>
       </div>
@@ -28,12 +28,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-@keyframes gate
-  from
-    transform translate3d(0,0,0) rotate(0deg)
-  to
-    transform translate3d(0,0,0) rotate(360deg)
-
 .section-hero
   position relative
   height 100vh
@@ -45,7 +39,6 @@ export default {
   justify-content stretch
   align-items stretch
   text-align center
-  background url(/stars.svg)
   .section-container
     display flex
     align-items stretch
@@ -61,88 +54,14 @@ export default {
     .content
       // margin auto
       width 100%
-      .suptitle
-        margin-bottom var(--spacing-7)
-        color var(--white)
       .title
         margin 0
         padding-left var(--spacing-5)
         padding-right var(--spacing-5)
-        svg
-          width 100%
-          height auto
-          max-height 6rem
-        .wordmarks
-          position relative
-          svg:first-child
-            position absolute
-            transform translateY(20%)
-          svg:last-child
-            position relative
       .subtitle
         center()
         margin-top var(--spacing-7)
         color var(--primary-900)
-
-  .hero-graphics
-    position absolute
-    top -5%
-    left 0
-    bottom -100%
-    width 100%
-    overflow hidden
-    &__glow
-      position absolute
-      width 140%
-      padding-bottom 140%
-      left -20%
-      top 5%
-      background radial-gradient(50% 50% at 50% 50%, #320b93 50%, rgba(50,11,147,0) 99%)
-      z-index -1
-    &__gate,
-    &__gate-notches
-      position absolute
-      width 88%
-      left 6%
-      top 15%
-      transform translate3d(0,0,0)
-    &__gate
-      padding-bottom 88%
-      border-radius 50%
-      box-shadow inset 0 0.1875em 0.0625em 0 rgba(255, 255, 255, 0.3)
-      border 1px solid rgba(255, 255, 255, 0.1)
-      box-sizing content-box
-      animation 3s gate infinite linear
-      &:after
-        content ""
-        position absolute
-        trbl 3.2%
-        border-radius 50%
-        box-shadow inset 0 -0.1875em 0.0625em 0 rgba(255, 255, 255, 0.3)
-        border 1px solid rgba(255, 255, 255, 0.1)
-        animation 1.4s gate infinite linear reverse
-    &__gate-notches
-      height auto
-      animation 40s gate infinite linear
-    &__star
-      position absolute
-      width 60%
-      padding-bottom 60%
-      left 20%
-      top 25%
-      background radial-gradient(50% 50% at 50% 50%, #fff 39.83%, rgba(203,162,255,0.63) 64.1%, rgba(64, 53, 195, 0.59) 85.81%, rgba(53, 11, 158, 0) 99%)
-    &__planet
-      position absolute
-      width 126%
-      padding-bottom 126%
-      left -13%
-      top 42%
-      border-radius 50%
-      background radial-gradient(31.26% 16.8% at 50.03% -2.64%, #ccc7fb 0%, rgba(145,51,202,0.6) 55.21%, rgba(141,14,192,0) 100%), radial-gradient(84.49% 66.22% at 50% 59.94%, #000 0%, #030419 60.94%, #340d67 80.73%, #36299b 90.1%)
-      box-shadow inset 0px 3.5rem 3.5rem rgba(48, 44, 245, 0.17)
-
-.btn__primary
-  margin-top var(--spacing-8)
 
 @media screen and (max-width: 1024px)
   .section-hero
@@ -157,8 +76,6 @@ export default {
     .container
       .content
         padding-bottom 20%
-    .hero-graphics
-      font-size 0.5rem
 
 @media $breakpoint-small-max
   .section-hero
@@ -174,21 +91,4 @@ export default {
         padding-top 20%
         .subtitle
           margin-top var(--spacing-6)
-    .hero-graphics
-      font-size 0.36rem
-      &__planet
-        top 31%
-
-  .btn__primary
-    width 100%
-    max-width 13rem
-
-@media screen and (max-width: 414px)
-  .section-hero
-    margin-top calc(var(--spacing-7) * -1)
-
-@media screen and (min-width: 1536px)
-  .section-hero
-    .hero-graphics
-      overflow visible
 </style>
