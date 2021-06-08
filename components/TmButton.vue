@@ -15,7 +15,7 @@
     ]"
     :style="_styles"
   >
-    <span class="tm-button__content">
+    <span class="tm-button__content z-1">
       <slot />
     </span>
   </nuxt-link>
@@ -38,7 +38,7 @@
     ]"
     :style="_styles"
   >
-    <span class="tm-button__content">
+    <span class="tm-button__content z-1">
       <slot />
     </span>
   </tm-link>
@@ -58,7 +58,7 @@
     :style="_styles"
     aria-disabled="true"
   >
-    <span class="tm-button__content">
+    <span class="tm-button__content z-1">
       <slot />
     </span>
   </button>
@@ -78,7 +78,7 @@
     ]"
     :style="_styles"
   >
-    <span class="tm-button__content">
+    <span class="tm-button__content z-1">
       <slot />
     </span>
   </button>
@@ -227,12 +227,9 @@ export default {
     },
     _styles() {
       const styles = {}
-      const lightMode = this.$nuxt.$colorMode.value === 'light'
-      const backgroundColor = lightMode
-        ? this.lightBackgroundColor
-        : this.backgroundColor
-      const borderColor = lightMode ? this.lightBorderColor : this.borderColor
-      const color = lightMode ? this.lightColor : this.color
+      const backgroundColor = this.backgroundColor
+      const borderColor = this.borderColor
+      const color = this.color
 
       if (backgroundColor) styles['--bg-color'] = backgroundColor
       if (borderColor) styles['--border-color'] = borderColor
@@ -271,7 +268,7 @@ export default {
       position absolute
       border-radius inherit
       transform translateZ(0)
-      z-index 0 // may cause unintended overlays
+      z-index $z-index-0 // may cause unintended overlays
       opacity 0.4
       transition background-position .4s $ease-out, opacity .5s $ease-out
     &:hover,
@@ -308,8 +305,6 @@ export default {
       border-radius inherit
       opacity 0.33
       transition opacity .25s $ease-out
-      .light-mode &
-        opacity 1
     &.tm-button__glow::before // glow
       trbl -0.0625em
       filter blur(0.4rem)
@@ -365,9 +360,9 @@ export default {
 
   &__content
     position relative
-    z-index 1
     display flex
     flex-wrap wrap
+    white-space nowrap
 
   /* icons */
   >>> .icon__right

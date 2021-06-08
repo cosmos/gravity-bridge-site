@@ -1,55 +1,36 @@
 <template>
   <div>
+    <section-primary-nav />
     <Nuxt />
+    <section-footer />
   </div>
 </template>
 
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
+<style lang="stylus">
+// Accessible/SEO friendly CSS hiding
+.sr-only
+  position absolute
+  height 1px
+  width 1px
+  overflow hidden
+  clip rect(1px, 1px, 1px, 1px)
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-}
+// https://nuxtjs.org/examples/transitions
+.page-enter-active
+  transition opacity 0.2s $ease-out
+.page-leave-active
+  transition opacity 0.2s $ease-out
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
+.page-enter,
+.page-leave-to
+  opacity 0
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
+.btn-group
+  display flex
+  flex-direction column
+  gap 0 var(--grid-gap-x)
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
+@media $breakpoint-small
+  .btn-group
+    display block
 </style>
