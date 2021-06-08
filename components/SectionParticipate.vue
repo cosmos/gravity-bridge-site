@@ -28,7 +28,7 @@
           href="https://v1.cosmos.network/intro"
           size="l"
           class="btn"
-          >Learn<span class="icon__right">&rarr;</span></tm-button
+          >Register<span class="icon__right">&rarr;</span></tm-button
         >
         <tm-button
           to-link="internal"
@@ -36,7 +36,7 @@
           size="l"
           variant="text"
           class="btn"
-          >Explore tokens<span class="icon__right">&rarr;</span></tm-button
+          >Stay up to date<span class="icon__right">&rarr;</span></tm-button
         >
       </div>
     </div>

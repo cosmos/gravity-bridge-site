@@ -2,7 +2,9 @@
   <main>
     <section-hero />
     <section-intro />
-    <section-sponsored-coins />
+    <section-system />
+    <section-sponsored />
+    <section-prize />
     <section-participate />
     <section-register />
     <section-questions />

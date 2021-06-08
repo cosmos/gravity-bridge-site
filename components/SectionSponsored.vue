@@ -1,6 +1,23 @@
 <template>
-  <div class="tm-section tm-wrapper tm-container">
-    <div class="logos-list">
+  <div class="tm-section tm-container tm-wrapper">
+    <div class="tm-grid-base">
+      <div
+        class="
+          overline
+          tm-rf-1
+          tm-rf0-m-up
+          tm-medium
+          tm-lh-title
+          tm-overline
+          tm-measure-narrow
+          tm-title
+        "
+      >
+        sponsored by
+      </div>
+    </div>
+
+    <div class="logos-list mt-7">
       <tm-link v-for="item in list" :key="item.text" :href="item.url">
         <tm-tooltip :text="`${item.text} ↗`" position="top-center">
           <img
@@ -101,6 +118,9 @@ export default {
 .logos-list > a
   opacity 0.35
 
+.overline
+  grid-column 1/-1
+
 @media $breakpoint-xsmall-only
   .logos-list
     row-gap var(--spacing-7)
@@ -110,6 +130,9 @@ export default {
     grid-template-columns repeat(4, 1fr)
 
 @media $breakpoint-xl
+  .overline
+    grid-column 2/span 2
+
   .logos-list
     grid-template-columns repeat(5, 1fr)
 </style>
