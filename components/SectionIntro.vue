@@ -2,22 +2,27 @@
   <div class="section-intro">
     <div class="tm-section tm-container tm-wrapper section-container">
       <div class="content tm-center tm-muted">
-        <p>
-          The <tm-link href="#">Gravity Bridge &#8599;</tm-link> is an
-          open-source project designed specifically for the Cosmos Hub for
+        <p class="tm-rf1 tm-lh-copy">
+          The
+          <tm-link href="https://github.com/cosmos/gravity-bridge"
+            >Gravity Bridge &#8599;</tm-link
+          >
+          is an open-source project designed specifically for the Cosmos Hub for
           bridging Cosmos and Ethereum chains.
         </p>
-        <p>
+        <p class="tm-rf1 tm-lh-copy">
           Gravity is intended to pull as much value as possible into the orbit
           of the Hub, by bringing ERC20 assets from Ethereum into Cosmos and
           Cosmos assets to Ethereum with a decentralized bridge.
         </p>
-        <p>
+        <p class="tm-rf1 tm-lh-copy">
           The incentivized testnet will be modeled after the successful game of
           zones and will be supported by members of the Gravity team (Peggy JV),
-          <tm-link href="#">Althea &#8599;</tm-link>,
-          <tm-link href="#">the Interchain Foundation &#8599;</tm-link>, and
-          <tm-link href="#">Tendermint &#8599;</tm-link>.
+          <tm-link href="https://althea.net">Althea &#8599;</tm-link>,
+          <tm-link href="https://interchain.io"
+            >the Interchain Foundation &#8599;</tm-link
+          >, and
+          <tm-link href="https://tendermint.com">Tendermint &#8599;</tm-link>.
         </p>
       </div>
     </div>

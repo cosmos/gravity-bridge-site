@@ -28,7 +28,7 @@
       <nav ref="links" class="social-icons" role="navigation">
         <tm-link
           v-for="link in links"
-          :key="url(link)"
+          :key="link.id"
           :href="url(link)"
           class="social-icons__item"
         >

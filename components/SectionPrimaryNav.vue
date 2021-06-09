@@ -8,17 +8,17 @@
       <div class="nav-scroll">
         <ul>
           <li>
-            <NuxtLink to="/" class="text tm-rf0 tm-medium tm-lh-title"
-              >Stay up to date &#8594;</NuxtLink
+            <tm-link
+              href="https://cosmos.network"
+              class="text tm-rf0 tm-medium tm-lh-title"
+              >Stay up to date &#8594;</tm-link
             >
           </li>
           <li>
-            <a
-              href="https://github.com/cosmos/stargate-launch"
-              target="_blank"
-              rel="noreferrer noopener"
+            <tm-link
+              href="https://cosmos.network"
               class="text tm-rf0 tm-medium tm-lh-title"
-              >Register &#8594;</a
+              >Register &#8594;</tm-link
             >
           </li>
         </ul>
