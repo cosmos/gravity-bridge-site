@@ -50,7 +50,7 @@ export default {}
 .content
   width 100%
   text-align left
-  max-width 576px
+  max-width 36rem
 
 @media $breakpoint-small-max
   .section-container

@@ -28,45 +28,11 @@
 </template>
 
 <script>
-import moment from 'moment-timezone'
 import LogoCosmosWordmark from '~/components/logos/LogoCosmosWordmark.vue'
 
 export default {
   components: {
     LogoCosmosWordmark,
-  },
-  data() {
-    return {
-      moment,
-      countdown: {
-        now: Math.trunc(new Date(new Date().toUTCString()).getTime() / 1000),
-        date: '2021-06-21',
-        time: '10:00',
-        // usage: moment.tz("2021-02-18 06:00", "UTC").format()
-        end: '2021-06-21T10:00:00Z',
-      },
-    }
-  },
-  mounted() {
-    window.setInterval(() => {
-      this.countdown.now = Math.trunc(new Date().getTime() / 1000)
-    }, 1000)
-  },
-  methods: {
-    countdownTimer(date, time) {
-      return moment.tz(`${date} ${time}`, 'UTC').format()
-    },
-    toTimezone(date, time) {
-      return (
-        moment
-          // set base time with UTC
-          // get timezone with i18n API - Intl.DateTimeFormat().resolvedOptions().timeZone
-          // usage: 2020-08-04 08:00
-          .tz(`${date} ${time}`, 'UTC')
-          // use client's locale time zone
-          .tz(moment.tz.guess())
-      )
-    },
   },
 }
 </script>

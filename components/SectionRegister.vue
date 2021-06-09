@@ -2,7 +2,7 @@
   <div class="tm-section tm-container tm-wrapper tm-grid-base">
     <div class="cards-wrapper mt-8">
       <tm-link
-        v-for="item in list"
+        v-for="item in ctas"
         :key="item.id"
         :href="item.url"
         class="card-item"
@@ -20,36 +20,10 @@
 
 <script>
 export default {
-  data() {
-    return {
-      list: [
-        {
-          url: 'https://cosmos.network',
-          overline: 'Guide',
-          title: 'Participant Guide',
-        },
-        {
-          url: 'https://cosmos.network',
-          overline: 'Regulations',
-          title: 'Rules & Regulations',
-        },
-        {
-          url: 'https://cosmos.network',
-          overline: 'Support',
-          title: 'Get help',
-        },
-        {
-          url: 'https://cosmos.network',
-          overline: 'Regulations',
-          title: 'Code of conduct',
-        },
-        {
-          url: 'https://cosmos.network',
-          overline: 'Support',
-          title: 'Resources',
-        },
-      ],
-    }
+  computed: {
+    ctas() {
+      return this.$store.state.ctas
+    },
   },
 }
 </script>
