@@ -68,5 +68,5 @@ export default {
     grid-column 2/span 2
 
   .logos-list
-    grid-template-columns repeat(5, 1fr)
+    grid-template-columns repeat(auto-fit, minmax(0, 1fr))
 </style>

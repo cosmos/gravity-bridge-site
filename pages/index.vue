@@ -4,7 +4,7 @@
     <section-intro />
     <section-started />
     <section-system />
-    <section-sponsored />
+    <section-sponsors />
     <section-prize />
     <section-participate />
     <section-register />
