@@ -1,6 +1,6 @@
 <template>
   <div class="tm-section tm-container tm-wrapper">
-    <div class="split">
+    <div class="tm-wrapper split">
       <div class="left">
         <div
           class="
@@ -21,12 +21,12 @@
           at stake
         </h1>
         <div class="desc mt-7">
-          <p class="tm-text">
+          <p class="tm-rf1 tm-lh-copy tm-text">
             There will be a 1st, 2nd, and 3rd place prize awarded to the teams
             who discover the most unique edge cases, and will be evaluated based
             on their level of interesting, novel, important, or "cool" factors.
           </p>
-          <p class="tm-text">
+          <p class="tm-rf1 tm-lh-copy tm-text">
             For all validators who successfully participate in the testnet, they
             will receive an honorarium gift.
           </p>
@@ -36,8 +36,13 @@
         <div class="card">
           <div class="card-inner">
             <div class="top">
-              <div class="card-graphics">
-                <graphics-coin-stack class="coin-stack" />
+              <div class="graphics">
+                <cld-image
+                  public-id="bridge-prize-graphics_znwqaq.svg"
+                  fetch-format="svg"
+                  quality="auto"
+                  class="graphics__item"
+                />
               </div>
               <div class="text">
                 <div
@@ -108,7 +113,7 @@
             <div class="tm-rf0 tm-medium tm-lh-title tm-overline tm-muted">
               Participation reward
             </div>
-            <div class="tm-rf2 tm-bold tm-lh-title tm-title">
+            <div class="tm-rf3 tm-bold tm-lh-title tm-title">
               10
               <tm-atom />
             </div>
@@ -128,7 +133,7 @@ export default {}
   max-width 29.6875rem
 
 .right
-  margin-top var(--spacing-9)
+  margin-top var(--spacing-13)
 
 .desc
   max-width 23.375rem
@@ -148,6 +153,15 @@ export default {}
   flex-direction row
   align-items center
   justify-content space-between
+  position relative
+
+.graphics
+  &__item
+    height auto
+    position absolute
+    top -14.625rem
+    left -12rem
+    max-width 110%
 
 .horizontal-line
   margin var(--spacing-7) 0
@@ -163,12 +177,21 @@ export default {}
   padding-left 2.0313rem
   padding-right 2.0313rem
 
+@media $breakpoint-small-max
+  .top
+  .footer
+    display block
+
+  .graphics
+    display none
+
 @media $breakpoint-small
   .split
     display block
 
   .right
-    margin-top 0
+    align-self flex-end
+    max-width 29.6875rem
 
 @media $breakpoint-xl
   .split
@@ -176,4 +199,7 @@ export default {}
     grid-template-columns auto auto
     grid-template-rows 1fr
     gap var(--spacing-11)
+
+  .right
+    margin-top 0
 </style>

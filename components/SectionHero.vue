@@ -15,7 +15,13 @@
           v-if="toTimezone(endDate, endTime) >= moment()"
           :now="currentTime"
           :end="countdownTimer(endDate, endTime)"
-          class="time tm-rf7 tm-medium tm-lh-title mt-3 tm-title mt-8"
+          class="
+            time
+            tm-rf6 tm-rf7-m-up tm-medium tm-lh-title
+            mt-3
+            tm-title
+            mt-8
+          "
         />
         <div
           v-else
