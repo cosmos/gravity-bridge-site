@@ -33,7 +33,9 @@
           <div class="list-item">20GB or more of SSD storage</div>
         </div>
         <p class="desc mt-9 tm-muted">
-          <tm-link href="#">Everything you need to know &#8599;</tm-link>
+          <tm-link href="#" class="tm-link-external"
+            >Everything you need to know</tm-link
+          >
           to validate on the Althea blockchain and run the Gravity bridge
           module.
         </p>

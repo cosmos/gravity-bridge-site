@@ -10,7 +10,7 @@
           tm-lh-title
           tm-overline
           tm-measure-narrow
-          tm-title
+          tm-text
         "
       >
         sponsored by

@@ -51,7 +51,9 @@
           <div class="right">
             <div class="list">
               <div class="list__item">
-                <tm-link href="#">How Gravity Works &#8599;</tm-link>
+                <tm-link href="#" class="tm-link-external"
+                  >How Gravity Works</tm-link
+                >
               </div>
               <div class="list__item">
                 <tm-link href="#">Participant Guide &#8594;</tm-link>
@@ -63,7 +65,9 @@
                 <tm-link href="#">Competition code of conduct &#8594;</tm-link>
               </div>
               <div class="list__item">
-                <tm-link href="#">Validator Setup &#8599;</tm-link>
+                <tm-link href="#" class="tm-link-external"
+                  >Validator Setup</tm-link
+                >
               </div>
             </div>
           </div>
@@ -111,14 +115,14 @@ export default {}
   .split
     display block
 
-  .right
-    margin-top 0
-
 @media $breakpoint-xl
   .split
     display grid
     grid-template-columns 50% 50%
     grid-template-rows 1fr
+
+  .right
+    margin-top 0
 
   .section-date
     grid-column 3/span 9

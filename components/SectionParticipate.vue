@@ -1,6 +1,6 @@
 <template>
   <div class="tm-section tm-container">
-    <div class="tm-wrapper center">
+    <div class="section-container tm-wrapper center">
       <div
         class="
           overline
@@ -15,14 +15,14 @@
       >
         participate
       </div>
-      <h1 class="title tm-rf4 tm-bold tm-lh-title tm-title mt-5">
+      <h1 class="title tm-rf6 tm-bold tm-lh-title tm-title mt-5">
         The interoperable future, starts here
       </h1>
-      <p>
+      <p class="desc tm-rf1 tm-lh-copy mt-7 tm-text">
         Register now for the exclusive validator incentivized testnet for
         Gravity Bridge, connecting Ethereum and Cosmos.
       </p>
-      <div class="btn-group mt-8">
+      <div class="btn-group mt-9">
         <tm-button
           to-link="external"
           href="https://v1.cosmos.network/intro"
@@ -43,8 +43,15 @@
   </div>
 </template>
 
-<script>
-export default {}
-</script>
+<script></script>
 
-<style lang="stylus" scoped></style>
+<style lang="stylus" scoped>
+.section-container
+  text-align center
+
+.title
+  max-width 62.9375rem
+
+.desc
+  max-width 35.8125rem
+</style>

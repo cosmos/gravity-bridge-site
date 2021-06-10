@@ -13,11 +13,11 @@
           </div>
           <h1
             v-if="error.statusCode === 404"
-            class="title tm-rf6 tm-bold tm-lh-title tm-title"
+            class="title tm-rf6 tm-bold tm-lh-title tm-title mt-5"
           >
             Page Not Found
           </h1>
-          <h1 v-else class="title tm-rf6 tm-bold tm-lh-title tm-title">
+          <h1 v-else class="title tm-rf6 tm-bold tm-lh-title tm-title mt-5">
             {{ error.message }}
           </h1>
           <tm-button to-link="internal" to="/" class="btn mt-7"
@@ -41,15 +41,12 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-// Hero
 .section-hero
   text-align center
+
 .section-hero .text
   grid-column 1/-1
-.section-hero .overline
-  color var(--white-500)
-.section-hero .title
-  margin-top var(--spacing-5)
+
 @media $breakpoint-xl
   .section-hero .text
     grid-column 2/span 10
