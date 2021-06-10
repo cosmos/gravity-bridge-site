@@ -2,12 +2,12 @@
   <div class="tm-section tm-container tm-wrapper">
     <div class="tm-grid-base">
       <div class="graphics">
-        <!-- <cld-image
+        <cld-image
           public-id="system-requirements-graphics_dq4bfn.svg"
           fetch-format="svg"
           quality="auto"
           class="graphics__item"
-        /> -->
+        />
       </div>
       <div class="text tm-grid-base">
         <div
@@ -55,25 +55,38 @@ export default {}
 .list
 .desc
   grid-column 1/-1
+  position relative
+
+.text
+.graphics
+  grid-row 1
 
 .graphics
   display flex
-  justify-content flex-end
   align-items flex-end
+  position relative
 
-.graphics__item
-  width 130%
-  height auto
-  pointer-events none
+  &__item
+    height auto
+    position absolute
 
 .list-item
   padding-top var(--spacing-7)
   padding-bottom var(--spacing-7)
   border-bottom 1px solid var(--white-100)
 
+@media $breakpoint-small-max
+  .graphics__item
+    bottom 6rem
+
 @media $breakpoint-xl
   .graphics
     grid-column 2/span 2
+
+    &__item
+      max-width 620%
+      left -24rem
+      bottom -2rem
 
   .overline
     grid-column 4/span 5
