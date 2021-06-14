@@ -119,10 +119,7 @@ export default {
     '~/plugins/v-tooltip.client.js',
   ],
 
-  env: {
-    CLOUDINARY_API_KEY: process.env.CLOUDINARY_API_KEY,
-    CLOUDINARY_API_SECRET: process.env.CLOUDINARY_API_SECRET,
-  },
+  env: {},
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -158,7 +155,7 @@ export default {
   cloudinary: {
     cloudName: 'doflkcxfd',
     useComponent: true,
-    apiKey: 'your-API-key',
-    apiSecret: 'your-API-secret',
+    apiKey: process.env.CLOUDINARY_API_KEY,
+    apiSecret: process.env.CLOUDINARY_API_SECRET,
   },
 }
