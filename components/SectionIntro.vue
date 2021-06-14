@@ -1,6 +1,6 @@
 <template>
-  <div class="section-intro">
-    <div class="tm-section tm-container tm-wrapper section-container">
+  <div class="section-intro z-2">
+    <div class="tm-container tm-wrapper section-container">
       <div class="content tm-center tm-muted">
         <p class="tm-rf1 tm-lh-copy">
           The
@@ -40,6 +40,9 @@ export default {}
 </script>
 
 <style lang="stylus" scoped>
+.section-intro
+  position relative
+
 .section-container
   display flex
   align-items stretch

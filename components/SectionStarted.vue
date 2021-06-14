@@ -85,6 +85,9 @@ export default {}
 </script>
 
 <style lang="stylus" scoped>
+.section-started
+  position relative
+
 .section-container
   display flex
   flex-direction column
