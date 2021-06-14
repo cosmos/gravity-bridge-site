@@ -10,7 +10,7 @@
           <hr class="horizontal" />
         </div>
         <div class="link-item">
-          <nuxt-link to="/signup">Updates</nuxt-link>
+          <tm-link href="#">Updates</tm-link>
         </div>
         <div class="link-item">
           <tm-link href="https://v1.cosmos.network/privacy">Privacy</tm-link>

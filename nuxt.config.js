@@ -126,14 +126,9 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
-    // https://github.com/juliomrqz/nuxt-optimized-images
-    '@aceforth/nuxt-optimized-images',
     // https://github.com/nuxt-community/style-resources-module
     '@nuxtjs/style-resources',
   ],
-  optimizedImages: {
-    optimizeImages: true,
-  },
   styleResources: {
     stylus: [
       '~/assets/styles/abstracts/_*.styl',

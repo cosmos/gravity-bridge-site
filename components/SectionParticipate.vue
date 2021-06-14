@@ -31,8 +31,8 @@
           >Register<span class="icon__right">&rarr;</span></tm-button
         >
         <tm-button
-          to-link="internal"
-          to="/ecosystem/tokens"
+          to-link="external"
+          href="https://v1.cosmos.network/intro"
           size="l"
           variant="text"
           class="btn"
