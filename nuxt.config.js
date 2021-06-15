@@ -109,21 +109,16 @@ export default {
       { rel: 'preconnect', href: 'https://www.google-analytics.com' },
     ],
   },
-
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [{ src: '~/assets/styles/main.styl', lang: 'stylus' }],
-
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~/plugins/vue-scrollto.client.js',
     '~/plugins/v-tooltip.client.js',
   ],
-
   env: {},
-
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
-
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
@@ -138,7 +133,7 @@ export default {
     ],
   },
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/cloudinary'],
+  modules: ['@nuxtjs/cloudinary', '@nuxtjs/svg'],
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     // https://nuxtjs.org/faq/postcss-plugins/#recommended-method

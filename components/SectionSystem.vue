@@ -3,7 +3,7 @@
     <div class="tm-grid-base">
       <div class="graphics">
         <cld-image
-          public-id="system-requirements-graphics_dq4bfn.svg"
+          public-id="system-requirements-graphics_dq4bfn"
           fetch-format="svg"
           quality="auto"
           class="graphics__item"

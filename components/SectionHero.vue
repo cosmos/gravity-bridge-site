@@ -1,7 +1,7 @@
 <template>
   <div class="section-hero">
     <div class="tm-section tm-container tm-wrapper z-2">
-      <div class="section-container tm-grid-base">
+      <div class="tm-grid-base">
         <div class="text">
           <div class="title tm-rf4 tm-bold tm-lh-title tm-title">
             Prepare your validators to<br />defy Gravity.
@@ -32,16 +32,21 @@
         <div class="date tm-rf0 tm-medium tm-lh-title tm-overline mt-3 tm-text">
           Registration ends June 21
         </div>
+        <EthBlobs class="eth" />
       </div>
     </div>
-    <graphics-hero class="graphics z-0" />
+    <graphics-hero />
   </div>
 </template>
 
 <script>
 import moment from 'moment-timezone'
+import EthBlobs from '@/assets/illustrations/eth-blobs.svg?inline'
 
 export default {
+  components: {
+    EthBlobs,
+  },
   data() {
     return {
       moment,
@@ -96,12 +101,32 @@ export default {
 .date
   grid-column 1/-1
 
+.eth
+  height auto
+  // width 100%
+  max-width 50%
+  position absolute
+  right 21%
+  top 48%
+
 @media $breakpoint-small-max
   .section-hero
     min-height 32rem
     max-height none
     height auto
-    // margin-bottom var(--spacing-8)
+
+  .eth
+    top 90%
+    left 35%
+
+@media $breakpoint-small
+  .eth
+    top 60%
+    left 35%
+
+@media $breakpoint-large
+  .eth
+    top 55%
 
 @media $breakpoint-xl
   .text
@@ -112,4 +137,7 @@ export default {
 
   .date
     grid-column 2/span 7
+
+  .eth
+    grid-column 5/span 4
 </style>

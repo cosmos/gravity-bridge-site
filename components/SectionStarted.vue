@@ -74,7 +74,7 @@
         </div>
       </div>
       <div class="tm-grid-base mt-10">
-        <section-date class="section-date" />
+        <section-date class="section-date z-2" />
       </div>
     </div>
   </div>
@@ -116,6 +116,7 @@ export default {}
 
 .section-date
   grid-column 1/-1
+  position relative
 
 @media $breakpoint-small
   .split

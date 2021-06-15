@@ -38,7 +38,7 @@
             <div class="top">
               <div class="graphics">
                 <cld-image
-                  public-id="bridge-prize-graphics_znwqaq.svg"
+                  public-id="bridge-prize-graphics_znwqaq"
                   fetch-format="svg"
                   quality="auto"
                   class="graphics__item"

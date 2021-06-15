@@ -1,7 +1,7 @@
 <template>
-  <div class="canvas tm-center">
+  <div class="canvas tm-center z-0">
     <div class="container">
-      <div class="layer layer-back">
+      <div class="layer layer-front">
         <cld-image
           public-id="bridge-hero-graphics_vasydt"
           fetch-format="svg"
@@ -38,12 +38,12 @@ svg
   position absolute
   trbl 0 0 auto
 
-.layer-back
+.layer-front
   display flex
   align-items center
   justify-content center
   position relative
-  margin-top -6%
+  margin-top -4%
 
 .graphics__item
   height auto

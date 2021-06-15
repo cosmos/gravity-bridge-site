@@ -1,7 +1,7 @@
 <template>
   <div class="tm-section tm-container tm-wrapper section-graphics z-0">
     <cld-image
-      public-id="bridge-get-started_droll0.svg"
+      public-id="bridge-get-started_droll0"
       fetch-format="svg"
       quality="auto"
       class="graphics__item"
