@@ -1,6 +1,6 @@
 <template>
   <div class="section-hero">
-    <div class="tm-section tm-container tm-wrapper">
+    <div class="tm-section tm-container tm-wrapper z-2">
       <div class="section-container tm-grid-base">
         <div class="text">
           <div class="title tm-rf4 tm-bold tm-lh-title tm-title">
@@ -34,6 +34,7 @@
         </div>
       </div>
     </div>
+    <graphics-hero class="graphics z-0" />
   </div>
 </template>
 
@@ -81,11 +82,14 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+.graphics
+  position relative
+
 .section-hero
   position relative
   height 100vh
-  // min-height 52rem
-  // max-height 72rem
+  min-height 52rem
+  max-height 72rem
 
 .text
 .time

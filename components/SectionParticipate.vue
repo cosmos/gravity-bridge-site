@@ -1,6 +1,6 @@
 <template>
   <div class="tm-section tm-container">
-    <div class="section-container tm-wrapper center">
+    <div class="section-container tm-wrapper center section z-2">
       <div
         class="
           overline
@@ -40,12 +40,16 @@
         >
       </div>
     </div>
+    <graphics-participate />
   </div>
 </template>
 
 <script></script>
 
 <style lang="stylus" scoped>
+.section
+  position relative
+
 .section-container
   text-align center
 

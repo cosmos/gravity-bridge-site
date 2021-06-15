@@ -2,7 +2,7 @@
   <main>
     <section-hero />
     <section-intro />
-    <section-graphics-started />
+    <graphics-started />
     <section-started />
     <section-system />
     <section-sponsors />
