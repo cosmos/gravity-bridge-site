@@ -2,13 +2,12 @@
   <div class="canvas tm-center z-0">
     <div class="container">
       <div class="layer layer-back">
-        <graphics class="graphics__item" />
-        <!-- <cld-image
-          public-id="bridge-graphics-participate_v93aur.svg"
+        <cld-image
+          public-id="bridge-graphics-participate_hk7ybm"
           fetch-format="svg"
           quality="auto"
           class="graphics__item"
-        /> -->
+        />
       </div>
     </div>
   </div>
@@ -44,7 +43,7 @@ svg
   align-items center
   justify-content center
   position relative
-  margin-top -28%
+  margin-top -18%
 
 .bg
   position relative
@@ -52,7 +51,11 @@ svg
   filter blur(10px)
   user-select none
 
+@media $breakpoint-small-max
+  .layer-back
+    margin-top 0
+
 @media $breakpoint-medium
   .container
-    padding-bottom (736/1440) * 100%
+    padding-bottom 30.111111%
 </style>
