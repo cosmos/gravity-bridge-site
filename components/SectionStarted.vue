@@ -34,7 +34,7 @@
             print a certain message.
           </p>
         </div>
-        <div class="split mt-9">
+        <div class="split z-2 mt-9">
           <div class="left">
             <h1 class="tm-rf6 tm-bold tm-lh-title tm-title">250</h1>
             <p class="tm-rf0 tm-lh-title tm-text">
@@ -98,6 +98,9 @@ export default {}
   width 100%
   text-align left
   max-width 36rem
+
+.split
+  position relative
 
 .right
   margin-top var(--spacing-9)

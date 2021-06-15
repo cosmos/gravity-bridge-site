@@ -2,13 +2,12 @@
   <div class="canvas tm-center">
     <div class="container">
       <div class="layer layer-back">
-        <graphics-test class="graphics__item" />
-        <!-- <cld-image
-          public-id="bridge-graphics-participate_v93aur.svg"
+        <cld-image
+          public-id="bridge-hero-graphics_vasydt"
           fetch-format="svg"
           quality="auto"
           class="graphics__item"
-        /> -->
+        />
       </div>
     </div>
   </div>

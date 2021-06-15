@@ -32,7 +32,7 @@
           <div class="list-item">8 gb of ram</div>
           <div class="list-item">20GB or more of SSD storage</div>
         </div>
-        <p class="desc mt-9 tm-muted">
+        <p class="desc mt-9 tm-muted tm-measure">
           <tm-link href="#" class="tm-link-external"
             >Everything you need to know</tm-link
           >
@@ -95,5 +95,5 @@ export default {}
     grid-column 5/span 4
 
   .desc
-    grid-column 4/span 6
+    grid-column 5/span 6
 </style>
