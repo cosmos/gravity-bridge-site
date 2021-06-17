@@ -83,31 +83,7 @@ export default {
         content: 'Gravity Bridge: Althea',
       },
     ],
-    link: [
-      { rel: 'icon', href: '/favicon.ico' },
-      {
-        rel: 'apple-touch-icon',
-        size: '180x180',
-        href: '/apple-touch-icon.png',
-      },
-      {
-        rel: 'icon',
-        type: 'image/png',
-        sizes: '32x32',
-        href: '/favicon-32x32.png',
-      },
-      {
-        rel: 'icon',
-        type: 'image/png',
-        sizes: '16x16',
-        href: '/favicon-16x16.png',
-      },
-      {
-        rel: 'manifest',
-        href: '/site.webmanifest',
-      },
-      { rel: 'preconnect', href: 'https://www.google-analytics.com' },
-    ],
+    link: [{ rel: 'icon', href: '/favicon.ico' }],
   },
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [{ src: '~/assets/styles/main.styl', lang: 'stylus' }],
@@ -150,7 +126,5 @@ export default {
   cloudinary: {
     cloudName: 'doflkcxfd',
     useComponent: true,
-    apiKey: process.env.CLOUDINARY_API_KEY,
-    apiSecret: process.env.CLOUDINARY_API_SECRET,
   },
 }
