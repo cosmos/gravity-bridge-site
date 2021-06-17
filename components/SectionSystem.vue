@@ -2,9 +2,16 @@
   <div class="tm-section tm-container tm-wrapper">
     <div class="tm-grid-base">
       <div class="graphics">
-        <cld-image
+        <!-- <cld-image
           public-id="system-requirements-graphics_dq4bfn"
           fetch-format="svg"
+          quality="auto"
+          class="graphics__item"
+        /> -->
+        <cld-image
+          public-id="rewards_y9gz5i.svg"
+          fetch-format="svg"
+          width="auto"
           quality="auto"
           class="graphics__item"
         />
