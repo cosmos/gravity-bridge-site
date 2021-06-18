@@ -2,16 +2,30 @@
   <div class="canvas tm-center z-0">
     <div class="container">
       <div class="layer layer-front">
-        <cld-image
+        <!-- <cld-image
           public-id="bridge-hero-graphics_vasydt"
           fetch-format="svg"
           quality="auto"
           class="graphics__item"
-        />
+        /> -->
+        <img :src="src" class="graphics__item" />
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      src: this.$cloudinary.image.url('bridge-hero-graphics_vasydt', {
+        fetchFormat: 'auto',
+        quality: 'auto',
+      }),
+    }
+  },
+}
+</script>
 
 <style lang="stylus" scoped>
 .canvas
@@ -51,7 +65,18 @@ svg
   right -16%
   width 100%
 
+// @media $breakpoint-small
+//   .container
+//     flex auto
+
+//   .canvas
+//     width 0
+
 @media $breakpoint-medium
   .container
     padding-bottom (736/1440) * 100%
+
+// @media $breakpoint-xl
+//   .container
+//     flex auto
 </style>
